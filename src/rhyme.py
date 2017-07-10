@@ -30,15 +30,16 @@ def _make_rhyme_words(w):
     vowel_word = _vowel_str(w)
  
     for i in files:
-        with open("./dictionary/" + i, "r") as f:
+        with open("./dictionary/" + i, "r", encoding="utf-8") as f:
             trie = marisa_trie.Trie(list(f))
             if not os.path.isdir("../rhyme_words"):
                 os.mkdir("../rhyme_words")
 
-            with open("../rhyme_words/" + i[0] + ".txt", "w") as new_f:
+            with open("../rhyme_words/" + i[0] + ".txt", "w", encoding="utf-8") as new_f:
                 res = trie.keys(vowel_word)
                 for r in res:
                     new_f.write(r)
+                print("add ./../rhyme_words/{}".format(i[0] + ".txt"))
 
 def rhyme():
     try:
