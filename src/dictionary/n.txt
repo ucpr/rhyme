@@ -1,85 +1,85 @@
-aiai 内外 ないがい
-ao なお なお
-aaii 長生き ながいき
-aaoe 長そで ながそで
-aaen 長年 ながねん
-aaa 仲間 なかま
-aae 眺め ながめ
-aaui 中指 なかゆび
-aae 流れ ながれ
-aioe 鳴き声 なきごえ
-auaeu 慰める なぐさめる
-auiau なぐり合う なぐりあう
-aeieu 投げ入れる なげいれる
-aeau 投げ出す なげだす
-aaeai 情けない なさけない
-au 成す なす
-auaii 懐かしい なつかしい
-auou 納豆 なっとう
-auaui 夏休み なつやすみ
-aieau 何気なく なにげなく
-aioi 何より なにより
-aa 生 なま
-aaeu 怠ける なまける
-aai 生身 なまみ
-aai 悩み なやみ
-aau 鳴らす ならす
-aiau 成り立つ なりたつ
-aueu なるべく なるべく
-anio 難易度 なんいど
-aniou 南極 なんきょく
-aneoai 何でもない なんでもない
-anoiueo 何と言っても なんといっても
-anoauu なんとかする なんとかする
-anoau なんとなく なんとなく
-anei 南米 なんべい
-anaa なんらか なんらか
-iaoe 似顔絵 にがおえ
-iai 苦み にがみ
-iiu 握る にぎる
-iui 憎い にくい
-iuu 憎む にくむ
-ioio にこにこ にこにこ
-iou 濁る にごる
-iiou 二乗 にじょう
-iou 二足 にそく
-iuui 荷造り にづくり
-ioo 二度と にどと
-ionai 日本海 にほんかい
-ioniuu 日本中 にほんじゅう
-iuanu ニュアンス にゅあんす
-iuuia 入社 にゅうしゃ
-iuuiou 入賞 にゅうしょう
-iuuiouiou 入場料 にゅうじょうりょう
-iu 煮る にる
-iniou 人情 にんじょう
-inae 〜人前 にんまえ
-uu 抜く ぬく
-uo 布 ぬの
-uu 塗る ぬる
-eieiu ネイティブ ねいてぃぶ
-eui ねずみ ねずみ
-eaii 寝たきり ねたきり
-euueu ネックレス ねっくれす
-eau ねらう ねらう
-enouioeu 年功序列 ねんこうじょれつ
-enouei 年俸制 ねんぽうせい
-enei 年齢 ねんれい
-ouiou 農業 のうぎょう
-oueiia 納税者 のうぜいしゃ
-ouo 濃度 のうど
-ouiou 能力 のうりょく
-oau 逃す のがす
-oeu 乗せる のせる
-oou のぞく のぞく
-ooaii 望ましい のぞましい
-oou 臨む のぞむ
-oioo 後ほど のちほど
-oau 伸ばす のばす
-oaa 野原 のはら
-oiu 延びる のびる
-oou 上る のぼる
-oi のり のり
-oiuou 乗り過ごす のりすごす
-ooi のろい のろい
-onii のんびり のんびり
+naiai 内外
+nao なお
+naaii 長生き
+naaoe 長そで
+naanen 長年
+naaa 仲間
+naae 眺め
+naaui 中指
+naae 流れ
+naioe 鳴き声
+nauaeu 慰める
+nauiau なぐり合う
+naeieu 投げ入れる
+naeau 投げ出す
+naaenai 情けない
+nau 成す
+nauaii 懐かしい
+nauou 納豆
+nauaui 夏休み
+nanienau 何気なく
+nanioi 何より
+naa 生
+naaeu 怠ける
+naai 生身
+naai 悩み
+naau 鳴らす
+naiau 成り立つ
+naueu なるべく
+nanio 難易度
+naniou 南極
+naneonai 何でもない
+nanoiueo 何と言っても
+nanoauu なんとかする
+nanonau なんとなく
+nanei 南米
+nanaa なんらか
+niaoe 似顔絵
+niai 苦み
+niiu 握る
+niui 憎い
+niuu 憎む
+nionio にこにこ
+niou 濁る
+niiou 二乗
+niou 二足
+niuui 荷造り
+nioo 二度と
+nionai 日本海
+nioniuu 日本中
+niuanu ニュアンス
+niuuia 入社
+niuuiou 入賞
+niuuiouiou 入場料
+niu 煮る
+niniou 人情
+ninae 〜人前
+nuu 抜く
+nuno 布
+nuu 塗る
+neieiu ネイティブ
+neui ねずみ
+neaii 寝たきり
+neuueu ネックレス
+neau ねらう
+nenouioeu 年功序列
+nenouei 年俸制
+nenei 年齢
+nouiou 農業
+noueiia 納税者
+nouo 濃度
+nouiou 能力
+noau 逃す
+noeu 乗せる
+noou のぞく
+nooaii 望ましい
+noou 臨む
+noioo 後ほど
+noau 伸ばす
+noaa 野原
+noiu 延びる
+noou 上る
+noi のり
+noiuou 乗り過ごす
+nooi のろい
+nonii のんびり

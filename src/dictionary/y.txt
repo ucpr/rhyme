@@ -1,61 +1,61 @@
-aaaii やかましい やかましい
-aiuuiou 野球場 やきゅうじょう
-auia 役者 やくしゃ
-auin 役人 やくにん
-auai 役割 やくわり
-auuoi 安っぽい やすっぽい
-au やつ やつ
-aueuu やってくる やってくる
-aou 雇う やとう
-aai やはり やはり
-aueu 敗れる やぶれる
-aaiaiaa 病は気から やまいはきから
-aaoa 山小屋 やまごや
-aaoii ややこしい ややこしい
-aioeu やり遂げる やりとげる
-aui やる気 やるき
-uui 勇気 ゆうき
-uui 遊戯 ゆうぎ
-uuiou 友情 ゆうじょう
-uuuu 融通 ゆうずう
-uuou 有毒 ゆうどく
-uuo ＵＦＯ ゆーふぉー
-uuiou 有料 ゆうりょう
-uaa 浴衣 ゆかた
-ueu 輸血 ゆけつ
-uaa 豊か ゆたか
-ueu ゆでる ゆでる
-uieuuu ユニセックス ゆにせっくす
-ui 指 ゆび
-uai 由来 ゆらい
-ueu 揺れる ゆれる
-ouin 要因 よういん
-ouo 用語 ようご
-ouiou 養殖 ようしょく
-ouuui 要するに ようするに
-ouo 要素 ようそ
-ouien 幼稚園 ようちえん
-ouau ようやく ようやく
-oan 予感 よかん
-ou 欲 よく
-oei よけい よけい
-oou 予告 よこく
-ooaai 横並び よこならび
-ooai 横ばい よこばい
-oan 予算 よさん
-oiai 善し悪し よしあし
-oeu 寄せる よせる
-oou 予想 よそう
-oi 予知 よち
-ouaau 酔っ払う よっぱらう
-oaa 夜中 よなか
-oi 予備 よび
-oiou 予備校 よびこう
-ou 呼ぶ よぶ
-ooo よほど よほど
-oiaiau 読み間違う よみまちがう
-ouu 余裕 よゆう
-oi より より
-oooaii 喜ばしい よろこばしい
-oai 弱火 よわび
-oai 弱み よわみ
+aaaii やかましい
+aiuuiou 野球場
+auia 役者
+aunin 役人
+auai 役割
+auuoi 安っぽい
+au やつ
+aueuu やってくる
+aou 雇う
+aai やはり
+aueu 敗れる
+aaiaiaa 病は気から
+aaoa 山小屋
+aaoii ややこしい
+aioeu やり遂げる
+aui やる気
+uui 勇気
+uui 遊戯
+uuiou 友情
+uuuu 融通
+uuou 有毒
+u-uo- ＵＦＯ
+uuiou 有料
+uaa 浴衣
+ueu 輸血
+uaa 豊か
+ueu ゆでる
+unieuuu ユニセックス
+ui 指
+uai 由来
+ueu 揺れる
+ouin 要因
+ouo 用語
+ouiou 養殖
+ouuuni 要するに
+ouo 要素
+ouien 幼稚園
+ouau ようやく
+oan 予感
+ou 欲
+oei よけい
+oou 予告
+oonaai 横並び
+ooai 横ばい
+oan 予算
+oiai 善し悪し
+oeu 寄せる
+oou 予想
+oi 予知
+ouaau 酔っ払う
+onaa 夜中
+oi 予備
+oiou 予備校
+ou 呼ぶ
+ooo よほど
+oiaiau 読み間違う
+ouu 余裕
+oi より
+oooaii 喜ばしい
+oai 弱火
+oai 弱み
