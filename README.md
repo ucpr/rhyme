@@ -7,8 +7,10 @@
 ```bash
 $ pip install -r requirements.txt
 
+# rhymeフォルダ内で
+$ echo ひらがな > input.txt
 # src内で
-$ python rhyme.py ひらがなのたんご
+$ python rhyme.py
 ```
 
 ## ＃お願い
