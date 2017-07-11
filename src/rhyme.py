@@ -42,17 +42,16 @@ def _make_rhyme_words(w):
                 print("add ./../rhyme_words/{}".format(i[0] + ".txt"))
 
 def rhyme():
-    try:
-        w = sys.argv[1]
-    except IndexError:
-        print("引数にひらがなの文字列を与えてください.")
-        sys.exit()
+    word = ""
+    with open("./../input.txt", "r", encoding="utf-8") as f:
+        word = f.readline().rstrip()
+        print(word)
 
-    if not _is_hiragana(w):
+    if not _is_hiragana(word):
         print("error : ひらがなではありません.")
         sys.exit()
-
-    _make_rhyme_words(w)
+    
+    _make_rhyme_words(word)
     
 if __name__ == "__main__":
     rhyme()
