@@ -35,7 +35,6 @@ def _split_mora(word):
             mora_list.append(word[i])
             i += 1
 
-    print(mora_list)
     return mora_list
 
 def _vowel_str(word):
@@ -48,7 +47,6 @@ def _vowel_str(word):
         elif vowel == "-":
             _vowel_list.append(_vowel_list[-1])
 
-    print(_vowel_list)
     return "".join(_vowel_list)
 
 def _make_rhyme_words(w):
