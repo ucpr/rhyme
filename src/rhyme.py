@@ -28,9 +28,6 @@ def _split_mora(word):
             if _is_connectable(word[i + 1]):
                 mora_list.append(word[i] + word[i + 1])
                 i += 2
-            elif word[i + 1] in IGNORE:
-                mora_list.append(word[i])
-                i += 2
             else:
                 mora_list.append(word[i])
                 i += 1
@@ -46,7 +43,7 @@ def _vowel_str(word):
 
     for i in _split_mora(word):
         vowel = rd[i][-1]
-        if vowel in "aiueon":
+        if i not in IGNORE and vowel in "aiueon":
             _vowel_list.append(vowel)
         elif vowel == "-":
             _vowel_list.append(_vowel_list[-1])
