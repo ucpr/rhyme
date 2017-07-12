@@ -28,6 +28,7 @@ def _vowel_str(word):
 def _make_rhyme_words(w):
     files = os.listdir("./dictionary/")
     vowel_word = _vowel_str(w)
+    vowel_length = len(vowel_word)
  
     for i in files:
         with open("./dictionary/" + i, "r", encoding="utf-8") as f:
@@ -38,7 +39,10 @@ def _make_rhyme_words(w):
             with open("../rhyme_words/" + i[0] + ".txt", "w", encoding="utf-8") as new_f:
                 res = trie.keys(vowel_word)
                 for r in res:
-                    new_f.write(r)
+                    tmp = r.split()
+                    if vowel_length < len(tmp[0]):
+                        continue
+                    new_f.write(tmp[1] + "\n")
                 print("add ./../rhyme_words/{}".format(i[0] + ".txt"))
 
 def rhyme():
