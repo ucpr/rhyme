@@ -622,6 +622,7 @@ i-anau いいはなす
 i-uuu いいふるす
 i-auu いいまくる
 i-oau いいもらす
+iiooio いいよこいよ
 i-oou いいよどむ
 i-oeu いいよれる
 i-ae いいわけ
