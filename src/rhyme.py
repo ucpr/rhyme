@@ -38,16 +38,16 @@ def _split_mora(word):
     return mora_list
 
 def _vowel_str(word):
-    _vowel_list = []
+    vowel_list = []
 
     for i in _split_mora(word):
         vowel = rd[i][-1]
         if i not in IGNORE and vowel in "aiueon":
-            _vowel_list.append(vowel)
+            vowel_list.append(vowel)
         elif vowel == "-":
-            _vowel_list.append(_vowel_list[-1])
+            vowel_list.append(vowel_list[-1])
 
-    return "".join(_vowel_list)
+    return "".join(vowel_list)
 
 def _make_rhyme_words(w):
     files = os.listdir("./dictionary/")
@@ -71,6 +71,10 @@ def _make_rhyme_words(w):
 
 def rhyme():
     word = ""
+    if not os.path.exists("../input.txt"):
+        print("error : 入力ファイルがありません.")
+        sys.exit()
+
     with open("./../input.txt", "r", encoding="utf-8") as f:
         word = f.readline().rstrip()
         print(word)
