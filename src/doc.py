@@ -1,6 +1,9 @@
 __doc__ = """{f}
 
+   :)  Application that finds rhyming words. :)
+
 Usage:
+    rhyme.py [<hiragana_word>]
     rhyme.py [-s|--show] [<hiragana_word>]
     rhyme.py [-w|--write] [<hiragana_word>]
     rhyme.py [-h|--help]
