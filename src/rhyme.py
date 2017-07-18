@@ -4,8 +4,10 @@ import os
 import shutil
 import sys
 import marisa_trie
+from docopt import docopt
 
 from words import roman_dict as rd
+from doc import __doc__
 
 HIRAGANA = "ぁあぃいぅうぇえぉおかがきぎくぐけげこごさざしじすずせぜそぞただちぢっつづてでとど \
         なにぬねのはばぱひびぴふぶぷへべぺほぼぽまみむめもゃやゅゆょよらりるれろゎわゐゑをんー"
@@ -49,7 +51,7 @@ def _vowel_str(word):
 
     return "".join(vowel_list)
 
-def _make_rhyme_words(w):
+def _make_rhyme_words(w, state=0):
     files = os.listdir("./dictionary/")
     vowel_word = _vowel_str(w)
     vowel_length = len(vowel_word)
@@ -67,23 +69,44 @@ def _make_rhyme_words(w):
                     if vowel_length < len(tmp[0]):
                         continue
                     new_f.write(tmp[1] + "\n")
-                print("add ./../rhyme_words/{}".format(i[0] + ".txt"))
+                if not state:
+                    print("add ./../rhyme_words/{}".format(i[0] + ".txt"))
+
+def _input_word(args):
+    word = args["<hiragana_word>"]
+    if not word:
+        print("Error : 文字列が空文字列です.")
+        sys.exit()
+    if not _is_hiragana(word):
+        print("Error : ひらがなではありません.")
+        sys.exit()
+    return word
 
 def rhyme():
-    word = ""
-    if not os.path.exists("../input.txt"):
-        print("error : 入力ファイルがありません.")
-        sys.exit()
-
-    with open("./../input.txt", "r", encoding="utf-8") as f:
-        word = f.readline().rstrip()
-        print(word)
-
-    if not _is_hiragana(word):
-        print("error : ひらがなではありません.")
-        sys.exit()
+    args = docopt(__doc__)
     
-    _make_rhyme_words(word)
-    
+    if args["--show"]:
+        word = _input_word(args)
+        _make_rhyme_words(word, 1)
+        files = os.listdir("../rhyme_words")
+        for f in files:
+            with open("../rhyme_words/" + f, "r", encoding="utf-8") as txt:
+                for row in txt:
+                    print(row.rstrip())
+    elif args["--write"]:
+        word = _input_word(args)
+        _make_rhyme_words(word)
+    elif args["--help"]:
+        print(__doc__)
+    else:
+        word = args["<hiragana_word>"]
+        if not word:
+            print(__doc__)
+        else:
+            if not _is_hiragana(word):
+                print("Error : ひらがなではありません.")
+                sys.exit()
+            _make_rhyme_words(word)
+
 if __name__ == "__main__":
     rhyme()
