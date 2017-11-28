@@ -1,7 +1,6 @@
 #!/usr/bin/env/python3
 
 import os
-import shutil
 import sys
 import marisa_trie
 from docopt import docopt
@@ -14,11 +13,14 @@ HIRAGANA = "ぁあぃいぅうぇえぉおかがきぎくぐけげこごさざ�
 IGNORE = "っ"
 PETIT = "ぁぃぅぇぉっゃゅょゎ"
 
+
 def _is_hiragana(s):
     return all([ch in HIRAGANA for ch in s])
 
+
 def _is_connectable(c):
     return c not in IGNORE and c in PETIT
+
 
 def _split_mora(word):
     mora_list = []
@@ -39,6 +41,7 @@ def _split_mora(word):
 
     return mora_list
 
+
 def _vowel_str(word):
     vowel_list = []
 
@@ -51,18 +54,19 @@ def _vowel_str(word):
 
     return "".join(vowel_list)
 
+
 def _make_rhyme_words(w, state=0):
     files = os.listdir("./dictionary/")
     vowel_word = _vowel_str(w)
     vowel_length = len(vowel_word)
- 
+
     for i in files:
-        with open("./dictionary/" + i, "r", encoding="utf-8") as f:
+        with open("./dictionary/" + i, "r") as f:
             trie = marisa_trie.Trie(list(f))
             if not os.path.isdir("../rhyme_words"):
                 os.mkdir("../rhyme_words")
 
-            with open("../rhyme_words/" + i[0] + ".txt", "w", encoding="utf-8") as new_f:
+            with open("../rhyme_words/" + i[0] + ".txt", "w") as new_f:
                 res = trie.keys(vowel_word)
                 for r in res:
                     tmp = r.split()
@@ -71,6 +75,7 @@ def _make_rhyme_words(w, state=0):
                     new_f.write(tmp[1] + "\n")
                 if not state:
                     print("add ./../rhyme_words/{}".format(i[0] + ".txt"))
+
 
 def _input_word(args):
     word = args["<hiragana_word>"]
@@ -82,9 +87,10 @@ def _input_word(args):
         sys.exit()
     return word
 
+
 def rhyme():
     args = docopt(__doc__)
-    
+
     if args["--show"]:
         word = _input_word(args)
         _make_rhyme_words(word, 1)
@@ -107,6 +113,7 @@ def rhyme():
                 print("Error : ひらがなではありません.")
                 sys.exit()
             _make_rhyme_words(word)
+
 
 if __name__ == "__main__":
     rhyme()
