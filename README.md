@@ -1,42 +1,5 @@
-# Do you want to rhyme?
-部活のLTのために作りました.  
+# ＃Do you want to rhyme?
 韻を踏みたい単語を渡すと **韻が踏めそうな** 単語を返してくれます.  
-急ぎで作ったのでコードが汚いので,時間があるときに直していきます.
-
-## 使い方
-実行環境 : python3.5, python3.6では動作を確認しました.
-```bash
-$ pip install -r requirements.txt
-
-# src内で
-
-# help 
-$ python rhyme.py -h
-   :)  Application that finds rhyming words. :)
-Usage:
-    rhyme.py [<hiragana_word>]
-    rhyme.py [-s|--show] [<hiragana_word>]
-    rhyme.py [-w|--write] [<hiragana_word>]
-    rhyme.py [-h|--help]
-options:
-    -h --help   show this help message
-    -s --show   write to file and show rhyming words
-    -w --write  write to file
-
-# terminal上に表示
-$ python rhyme.py -s ひらがな
-    いかさま
-    きわやか
-    キタガワ
-    ヒラサワ
-    ...
-
-# ../rhyme_words内に書き出し
-$ python rhyme.py -w ひらがな
-    add ....
-    add ....
-    ...
-```
 
 ## ＃お願い
 辞書の語数が少なすぎて韻が全然韻が踏めないので単語を追加してほしいです!!!  
