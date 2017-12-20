@@ -29,13 +29,13 @@ def _vowel_str(word):
 
 def _make_rhyme_words(w):
     """ 韻を踏んでいそうな単語を探索してリストで返す """
-    files = os.listdir("./dictionary/")
+    files = os.listdir("src/dictionary/")
     vowel_word = _vowel_str(w)
     vowel_length = len(vowel_word)
     rhyme_words = []
 
     for i in files:
-        with open("./dictionary/" + i, "r") as f:
+        with open("src/dictionary/" + i, "r") as f:
             trie = marisa_trie.Trie(list(f))
             res = trie.keys(vowel_word)
 
