@@ -38,7 +38,6 @@ def _make_rhyme_words(w):
         with open("./dictionary/" + i, "r") as f:
             trie = marisa_trie.Trie(list(f))
             res = trie.keys(vowel_word)
-            print(res)
 
             for j in res:
                 tmp = j.split()
@@ -51,10 +50,9 @@ def _make_rhyme_words(w):
 def rhyme(text):
     """ 韻を踏んでいそうな単語をリストで返す """
     roman = _roman_str(text)
-    print(roman)
     return _make_rhyme_words(roman)
 
 
 if __name__ == "__main__":
-    res = rhyme(sys.argv[1] if len(sys.argv) >= 2 else "")
+    res = rhyme("沖縄")
     print(res)
