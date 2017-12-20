@@ -4,3 +4,5 @@ src/__pycache__
 src/gomi
 
 rhyme_words
+
+src/Makefile
