@@ -1,6 +1,7 @@
 #!/usr/bin/env/python3
 
 import os
+from typing import List
 import marisa_trie
 from pykakasi import kakasi
 
@@ -11,12 +12,12 @@ kakasi_py.setMode('J', 'a')
 conv = kakasi_py.getConverter()
 
 
-def _roman_str(text):
-    """ 与えられた文字列をローマ字に変換して返す """
-    return conv.do(text)
+def _roman_str(word: str) -> str:
+    """ 与えられた単語をローマ字に変換して返す """
+    return conv.do(word)
 
 
-def _vowel_str(word):
+def _vowel_str(word: str) -> str:
     """ 母音のみの文字列にして返す """
     vowel_str = ""
     for i in _roman_str(word):
@@ -26,12 +27,12 @@ def _vowel_str(word):
     return vowel_str
 
 
-def _make_rhyme_words(w):
+def _make_rhyme_words(word: str) -> List:
     """ 韻を踏んでいそうな単語を探索してリストで返す """
     files = os.listdir("src/dictionary/")
-    vowel_word = _vowel_str(w)
+    vowel_word = _vowel_str(word)
     vowel_length = len(vowel_word)
-    rhyme_words = []
+    rhyme_words = list()
 
     for i in files:
         with open("src/dictionary/" + i, "r") as f:
@@ -46,9 +47,9 @@ def _make_rhyme_words(w):
     return rhyme_words
 
 
-def rhyme(text):
+def rhyme(word) -> List:
     """ 韻を踏んでいそうな単語をリストで返す """
-    roman = _roman_str(text)
+    roman = _roman_str(word)
     return _make_rhyme_words(roman)
 
 
