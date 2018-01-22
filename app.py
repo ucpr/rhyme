@@ -5,4 +5,7 @@ from rhyme import rhyme
 
 
 if __name__ == "__main__":
-    print(rhyme("おきなわ"))
+    if len(sys.argv) > 1:
+        print(rhyme(sys.argv[1]))
+    else:
+        print("Yo Yo Yo チェケラ!")
