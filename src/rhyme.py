@@ -12,25 +12,24 @@ kakasi_py.setMode('J', 'a')
 conv = kakasi_py.getConverter()
 
 
-def _roman_str(word: str) -> str:
+def _converting_to_roman(word: str) -> str:
     """ 与えられた単語をローマ字に変換して返す """
     return conv.do(word)
 
 
-def _vowel_str(word: str) -> str:
+def _fetch_vowel(word: str) -> str:
     """ 母音のみの文字列にして返す """
     vowel_str = ""
-    for i in _roman_str(word):
-        if i in "aiueon-":
+    for i in _converting_to_roman(word):
+        if i in "aiueo":
             vowel_str += i
-
     return vowel_str
 
 
-def _make_rhyme_words(word: str) -> List:
+def _find_rhyme_words(word: str) -> List:
     """ 韻を踏んでいそうな単語を探索してリストで返す """
     files = os.listdir("src/dictionary/")
-    vowel_word = _vowel_str(word)
+    vowel_word = _fetch_vowel(word)
     vowel_length = len(vowel_word)
     rhyme_words = list()
 
@@ -43,14 +42,12 @@ def _make_rhyme_words(word: str) -> List:
                 tmp = j.split()
                 if len(tmp[0]) == vowel_length:  # 母音が全一致の場合のみ
                     rhyme_words.append(tmp[1])
-
     return rhyme_words
 
 
 def rhyme(word) -> List:
     """ 韻を踏んでいそうな単語をリストで返す """
-    roman = _roman_str(word)
-    return _make_rhyme_words(roman)
+    return _find_rhyme_words(_converting_to_roman(word))
 
 
 if __name__ == "__main__":
