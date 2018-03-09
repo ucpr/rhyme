@@ -48,8 +48,3 @@ def _find_rhyme_words(word: str) -> List:
 def rhyme(word) -> List:
     """ 韻を踏んでいそうな単語をリストで返す """
     return _find_rhyme_words(_converting_to_roman(word))
-
-
-if __name__ == "__main__":
-    res = rhyme("沖縄")
-    print(res)
