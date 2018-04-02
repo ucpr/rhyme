@@ -48,3 +48,17 @@ def _find_rhyme_words(word: str) -> List:
 def rhyme(word) -> List:
     """ 韻を踏んでいそうな単語をリストで返す """
     return _find_rhyme_words(_converting_to_roman(word))
+
+
+if __name__ == "__main__":
+    import sys
+    import random
+
+    if len(sys.argv) > 1:
+        res = rhyme(sys.argv[1])
+        if len(res) == 0:
+            print("韻が踏めなかったYo...実力不足だったYo...")
+        else:
+            print(sys.argv[1] + " と " + random.choice(res) + " で韻が踏めるかもしれないYo")
+    else:
+        print("Yo Yo Yo チェケラ!")
