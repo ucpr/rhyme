@@ -1,19 +1,22 @@
-# ＃Do you want to rhyme?
-韻を踏みたい単語を渡すと **韻が踏めそうな** 単語を返してくれます.  
-日本語の単語でしかいまは韻を踏むことができません(カタカナ文字ならわんちゃん :dog: )
+# rhyme
+「この単語で韻を踏めないかな...」というときに使えるシステムです.  
+漢字, ひらがな, カタカナの単語だったら韻を踏むことができます.
 
-# Example
-```bash
-$ python app.py 沖縄    
-['おびなた', 'トミナガ']
+# Version
+`Python3.6` 以上
 
-$ python app.py
-Yo Yo Yo チェケラ!
-```
-
-# How to use
+# Install
 ```
 $ pip install -r requirements.txt
+```
 
-$ python app.py [韻を踏みたい単語]
+# Usage
+```
+$ python rhyme.py <韻を踏みたい単語>
+```
+もしくは
+```
+from rhyme import rhyme
+
+print(rhyme("沖縄"))
 ```
