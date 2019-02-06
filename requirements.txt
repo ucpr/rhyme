@@ -1,7 +1,13 @@
 certifi==2017.4.17
 chardet==3.0.4
+greenlet==0.4.15
 idna==2.5
 marisa-trie==0.7.4
+msgpack==0.6.1
+neovim==0.3.1
+pykakasi==0.93
+pynvim==0.3.2
 requests==2.18.1
+semidbm==0.5.1
+six==1.12.0
 urllib3==1.21.1
-git+https://github.com/miurahr/pykakasi
