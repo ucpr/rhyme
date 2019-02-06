@@ -4,15 +4,9 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-neovim = "*"
 
 [packages]
-certifi = "==2017.4.17"
-chardet = "==3.0.4"
-idna = "==2.5"
-marisa-trie = "==0.7.4"
-requests = "==2.18.1"
-urllib3 = "==1.21.1"
+requests = "*"
 pykakasi = "*"
 
 [requires]
