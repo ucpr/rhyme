@@ -1,13 +1,9 @@
-certifi==2018.11.29
+-i https://pypi.org/simple
+certifi==2019.3.9
 chardet==3.0.4
-greenlet==0.4.15
 idna==2.8
-marisa-trie==0.7.4
-msgpack==0.6.1
-neovim==0.3.1
-pykakasi==0.93
-pynvim==0.3.2
+pykakasi==0.94
 requests==2.21.0
 semidbm==0.5.1
 six==1.12.0
-urllib3==1.24.1
+urllib3==1.24.3
