@@ -20,3 +20,6 @@ from rhyme import rhyme
 
 print(rhyme("沖縄"))
 ```
+
+# License
+MIT
